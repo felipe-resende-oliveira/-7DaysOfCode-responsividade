@@ -1,0 +1,17 @@
+@import url("styles.css/cabecalho.css");
+@import url("styles.css/agenda.css");
+
+:root {
+    --fonte-principal: "Montserrat";
+    --cor-de-fundo: #F8F4FF;
+    --branco: #FFFFFF; 
+    --preto: #000000;
+    --azul: #4894FF;
+    --cinza-claro: #A3A3A3;
+    --botao-laranja: #ffb050;
+
+}
+
+body {
+    background: var(--cor-de-fundo);
+}
