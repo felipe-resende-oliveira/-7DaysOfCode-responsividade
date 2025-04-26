@@ -2,6 +2,8 @@
 
 O desafio consiste em criar uma página de acordo com o Figma enviado e fazê-lo apenas com HTML e CSS. A cada dia você receberá uma parte nova do projeto até o 7 dia finalizá-lo
 
+> Status: Em desenvolvimento
+
 <div style="display: inline_block"><br>
   <img align="center" alt="icon-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
   <img align="center" alt="icon-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
