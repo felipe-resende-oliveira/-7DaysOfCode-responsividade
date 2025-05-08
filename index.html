@@ -16,12 +16,13 @@
         <img src="assets/perfil-1.svg" alt="Foto de perfil Sonia" class="cabecalho__perfil">
         <div class="cabecalho__textos">
             <h1 class="cabecalho__textos__titulo">Olá, Sônia</h1>
-            <p class="texto__secundario">Mais 4 consultas hoje</p>
+            <p class="cabecalho__texto-secundario">Mais 4 consultas hoje</p>
         </div>
     </header>
         <!--agenda Hoje-->
+    <h2 class="container__titulo">Hoje</h2>
     <section class="container">
-        <h2 class="container__titulo">Hoje</h2>
+        
         <div class="container__consulta-remota">
             <div class="consulta__cliente">
                 <img src="assets/perfil-2.svg" alt="Foto de perfil Luciana" class="consulta__foto-perfil">
@@ -92,10 +93,81 @@
                 </div>
             </div>
         </div>
+
+        <div class="container__consulta-remota">
+            <div class="consulta__cliente">
+                <img src="assets/perfil-4.svg" alt="Foto de perfil Marcos" class="consulta__foto-perfil">
+                <div class="consulta__texto">
+                    <h2 class="consulta__cliente-nome">Marcos Correia</h2>
+                    <div class="consulta__texto-secundario">
+                        <img src="assets/Camera.svg" alt="simbolo camera" class="consulta__cliente-camera">
+                        <p class="texto__secundario"> Consulta remota</p>
+                    </div>
+                </div>
+                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
+            </div>
+
+            <hr>
+
+            <div class="consulta__chamadas">
+                <p class="consulta__chamadas-texto">14:00 - 15:00 (1 hora)</p>
+                <div class="consulta__chamadas-botoes">
+                    <a href="#" class="consulta__chamadas-links video">Ligar por vídeo</a>
+                    <a href="#" class="consulta__chamadas-links audio">Ligar por áudio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__consulta-local">
+            <div class="consulta__cliente">
+                <img src="assets/perfil-3.jpg" alt="Foto de perfil Larissa" class="consulta__foto-perfil">
+                <div class="consulta__texto">
+                    <h2 class="consulta__cliente-nome">Larissa Santana</h2>
+                    <div class="consulta__texto-secundario">
+                        <img src="assets/pin.svg" alt="simbolo local" class="consulta__cliente-camera">
+                        <p class="texto__secundario"> Consulta local</p>
+                    </div>
+                </div>
+                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
+            </div>
+
+            <hr>
+
+            <div class="consulta__endereco">
+                <p class="consulta__chamadas-texto">16:00 - 17:00 - (1 hora)</p>
+                <div class="consulta__endereco-botao">
+                    <a href="#" class="consulta__endereco-links endereco">Ver endereço</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__consulta-remota">
+            <div class="consulta__cliente">
+                <img src="assets/perfil-4.svg" alt="Foto de perfil Marcos" class="consulta__foto-perfil">
+                <div class="consulta__texto">
+                    <h2 class="consulta__cliente-nome">Marcos Correia</h2>
+                    <div class="consulta__texto-secundario">
+                        <img src="assets/Camera.svg" alt="simbolo camera" class="consulta__cliente-camera">
+                        <p class="texto__secundario"> Consulta remota</p>
+                    </div>
+                </div>
+                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
+            </div>
+
+            <hr>
+
+            <div class="consulta__chamadas">
+                <p class="consulta__chamadas-texto">14:00 - 15:00 (1 hora)</p>
+                <div class="consulta__chamadas-botoes">
+                    <a href="#" class="consulta__chamadas-links video">Ligar por vídeo</a>
+                    <a href="#" class="consulta__chamadas-links audio">Ligar por áudio</a>
+                </div>
+            </div>
+        </div>
     </section>
     <!--agenda Amanhã-->
+    <h2 class="container__titulo">Amanhã</h2>
     <section class="container">
-        <h2 class="container__titulo">Amanhã</h2>
 
         <div class="container__consulta-local">
             <div class="consulta__cliente">
@@ -192,9 +264,9 @@
         </div>
     </section>
     <!--Agenda Quarta-feira-->
+    <h2 class="container__titulo">Quarta-feira</h2>
     <section class="container">
-        <h2 class="container__titulo">Quarta-feira</h2>
-
+        
         <div class="container__consulta-local">
             <div class="consulta__cliente">
                 <img src="assets/perfil-5.svg" alt="Foto de perfil Clara" class="consulta__foto-perfil">
@@ -217,77 +289,89 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="container__consulta-remota">
-            <div class="consulta__cliente">
-                <img src="assets/perfil-2.svg" alt="Foto de perfil Luciana" class="consulta__foto-perfil">
-                <div class="consulta__texto">
-                    <h2 class="consulta__cliente-nome">Luciana Dias</h2>
-                    <div class="consulta__texto-secundario">
-                        <img src="assets/Camera.svg" alt="simbolo camera" class="consulta__cliente-camera">
-                        <p class="texto__secundario"> Consulta remota</p>
+    <section class="container__formulario-cadastro">
+        <form class="formulario-cadastro">
+
+            <div class="campo__cadastro">
+                <Fieldset class="grupo-cadastro">
+                    <legend>Nome completo</legend>
+                    <div class="cadastro">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" class="cadastro__nome" placeholder="Nome..." required>
+                        <span class="mensagem-erro">Este campo é obrigatório!</span>
                     </div>
-                </div>
-                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
-            </div>
-
-            <hr>
-
-            <div class="consulta__chamadas">
-                <p class="consulta__chamadas-texto">14:00 - 15:00 (1 hora)</p>
-                <div class="consulta__chamadas-botoes">
-                    <a href="#" class="consulta__chamadas-links video">Ligar por vídeo</a>
-                    <a href="#" class="consulta__chamadas-links audio">Ligar por áudio</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container__consulta-remota">
-            <div class="consulta__cliente">
-                <img src="assets/perfil-4.svg" alt="Foto de perfil Marcos" class="consulta__foto-perfil">
-                <div class="consulta__texto">
-                    <h2 class="consulta__cliente-nome">Marcos Correia</h2>
-                    <div class="consulta__texto-secundario">
-                        <img src="assets/Camera.svg" alt="simbolo camera" class="consulta__cliente-camera">
-                        <p class="texto__secundario"> Consulta remota</p>
+                    <div class="cadastro">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" class="cadastro__nome" placeholder="Sobrenome..." required>
+                        <span class="mensagem-erro">Este campo é obrigatório!</span>
                     </div>
-                </div>
-                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
+                </Fieldset>
             </div>
 
-            <hr>
-
-            <div class="consulta__chamadas">
-                <p class="consulta__chamadas-texto">17:20 - 18:00 (40 minutos)</p>
-                <div class="consulta__chamadas-botoes">
-                    <a href="#" class="consulta__chamadas-links video">Ligar por vídeo</a>
-                    <a href="#" class="consulta__chamadas-links audio">Ligar por áudio</a>
-                </div>
+            <div class="campo__cadastro-consulta">
+                <label class="cadastro-titulo">Escolha o tipo de consulta:</label>
+                <label class="consulta__label">
+                    <input type="radio" name="tipo-consulta" id="consulta-local" class="cadastro__consulta" checked>
+                    <span>Consulta local</span>
+                </label>
+                <label class="consulta__label">
+                    <input type="radio" name="tipo-consulta" id="consulta-remota" class="cadastro__consulta">
+                    <span>Consulta remota</span>
+                </label>
             </div>
-        </div>
 
-        <div class="container__consulta-local">
-            <div class="consulta__cliente">
-                <img src="assets/perfil-3.jpg" alt="Foto de perfil Larissa" class="consulta__foto-perfil">
-                <div class="consulta__texto">
-                    <h2 class="consulta__cliente-nome">Larissa Santana</h2>
-                    <div class="consulta__texto-secundario">
-                        <img src="assets/pin.svg" alt="simbolo local" class="consulta__cliente-camera">
-                        <p class="texto__secundario"> Consulta local</p>
+            <div class="campo__cadastro">
+                <fieldset class="grupo-cadastro container__data-hora">
+                    <legend>Data e hora da consulta</legend>
+                    <div class="cadastro-data">
+                        <label class="cadastro-titulo">Informe a data da consulta:</label>
+                        <input type="date" name="data-consulta" id="data-consulta" class="data">
                     </div>
-                </div>
-                <img src="assets/Chatcirculo1.svg" alt="Chat" class="consulta__cliente-chat">
+                    <div class="cadastro-hora">
+                        <label class="cadastro-titulo">Informe o horário da consulta:</label>
+                        <input type="time" name="horario-consulta" id="horario-consulta" class="hora">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="campo__observacoes">
+                <label class="cadastro-titulo">Observações:</label>
+                <textarea name="observacoes" id="observacoes" rows="8" placeholder="Escreva suas observações..." class="cadastro-observacoes"></textarea>
             </div>
 
-            <hr>
+            <button type="submit" class="cadastro__botao">Concluído</button>
+        </form>
+    </section>
+    
+    <button class="botao__suspenso mais"><img src="assets/maisicone.svg" alt="icone mais"></button>
 
-            <div class="consulta__endereco">
-                <p class="consulta__chamadas-texto">16:00 - 17:00 - (1 hora)</p>
-                <div class="consulta__endereco-botao">
-                    <a href="#" class="consulta__endereco-links endereco">Ver endereço</a>
-                </div>
-            </div>
-        </div>
+    <section class="rodape">
+        <nav>
+            <ul>
+      
+                <li class="rodape__acao">
+                <span class="consultas-icone"></span>
+                Consultas
+                </li>
+    
+                <li class="rodape__acao">
+                <span class="clientes-icone"></span>
+                Clientes
+                </li>
+      
+                <li class="rodape__acao">
+                <span class="relatorios-icone"></span>
+                Relatórios
+                </li>
+      
+                <li class="rodape__acao">
+                <span class="menu-icone"></span>
+                Menu
+                </li>
+      
+            </ul>
+        </nav>
     </section>
 </body>
 </html>

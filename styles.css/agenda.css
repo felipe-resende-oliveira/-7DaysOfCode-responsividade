@@ -1,11 +1,13 @@
 .container {
     font-family: var(--fonte-principal);
+    padding-bottom: 1rem;
 }
 
 .container__titulo {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    margin-left: 1em;
+    background-color: var(--branco);
+    padding: 1rem 0 1rem 1rem;
 }
 
 .container__consulta-remota, .container__consulta-local {
@@ -26,7 +28,8 @@
 
 .consulta__foto-perfil {
     border-radius: 50%;
-    width: 15%;
+    width: 32px;
+    height: 32px;
 }
 
 .consulta__texto {
@@ -40,9 +43,9 @@
 }
 
 .consulta__cliente-nome {
-    font-size: 14px;
+    font-size: .9rem;
     font-weight: 700;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .consulta__cliente-chat {
@@ -61,28 +64,28 @@ hr {
 }
 
 .consulta__chamadas-texto {
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 500;
     margin-left: 1.5em;
 }
 
 .consulta__chamadas-links {
     border-radius: 8px;
-    padding: 1em;
-    margin: 1em 0;
+    padding: 1rem;
+    margin: 1rem 0;
     text-align: center;
-    font-size: 14px;
+    font-size: .9rem;
     font-weight: 500;
     text-decoration: none;
 }
 
 .video {
-    background: var(--botao-laranja);
+    background: var(--laranja);
     color: var(--branco);
 }
 
 .audio {
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--branco-borda);
     color: var(--preto);
 }
 
@@ -105,4 +108,47 @@ hr {
 .endereco {
     color: var(--branco);
     background: var(--azul);
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem 0rem;
+        margin: 0 4rem;
+    }
+
+    .container__consulta-remota, .container__consulta-local {
+        margin: 0;
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+
+    .container__titulo {
+        padding: 1rem 0 1rem 4rem;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem 0rem;
+        margin: 0 4rem;
+    }
+
+    .container__consulta-remota, .container__consulta-local {
+        margin: 0;
+        flex-basis: 30%;
+        flex-grow: 0;
+    }
+
+    .consulta__chamadas-botoes {
+        padding:0 5em;
+    }
 }
